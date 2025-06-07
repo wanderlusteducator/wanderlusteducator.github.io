@@ -22,7 +22,7 @@
     }
 
     header {
-      background: url('periodic table.png') center/cover no-repeat;
+      background: url('periodic table.svg') center/cover no-repeat;
       color: white;
       padding: 6rem 1rem;
       text-align: center;
@@ -40,21 +40,32 @@
       z-index: 0;
     }
 
-    header h1,
-    header p {
+    .header-content {
       position: relative;
       z-index: 1;
+      display: inline-block;
+      text-align: center;
     }
 
-    header h1 {
+    .header-content h1 {
       font-family: 'EB Garamond', serif;
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      margin: 0;
     }
 
-    header p {
+    .header-content p {
       font-size: 1.2rem;
       color: #ddd;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+      margin-top: 0.5rem;
     }
 
     nav {
@@ -116,8 +127,10 @@
 
 <body>
   <header>
-    <h1>Vamsi Kovelakuntla</h1>
-    <p>Teacher | Biologist | Interdisciplinary Thinker</p>
+    <div class="header-content">
+      <h1>Vamsi Kovelakuntla</h1>
+      <p>Teacher | Biologist | Interdisciplinary Thinker</p>
+    </div>
   </header>
 
   <nav>
